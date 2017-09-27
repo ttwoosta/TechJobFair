@@ -35,9 +35,11 @@ Partial Class frmJobFair
         '
         'picJobFair
         '
+        Me.picJobFair.Image = Global.TechJobFair.My.Resources.Resources.Fair
         Me.picJobFair.Location = New System.Drawing.Point(360, 29)
         Me.picJobFair.Name = "picJobFair"
         Me.picJobFair.Size = New System.Drawing.Size(297, 550)
+        Me.picJobFair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picJobFair.TabIndex = 0
         Me.picJobFair.TabStop = False
         '
@@ -63,13 +65,14 @@ Partial Class frmJobFair
         '
         'btnViewDetails
         '
+        Me.btnViewDetails.BackColor = System.Drawing.Color.Honeydew
         Me.btnViewDetails.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnViewDetails.Location = New System.Drawing.Point(93, 189)
         Me.btnViewDetails.Name = "btnViewDetails"
         Me.btnViewDetails.Size = New System.Drawing.Size(173, 34)
         Me.btnViewDetails.TabIndex = 3
         Me.btnViewDetails.Text = "View Job Fair Details"
-        Me.btnViewDetails.UseVisualStyleBackColor = True
+        Me.btnViewDetails.UseVisualStyleBackColor = False
         '
         'lblDate
         '
@@ -80,6 +83,7 @@ Partial Class frmJobFair
         Me.lblDate.Size = New System.Drawing.Size(112, 23)
         Me.lblDate.TabIndex = 4
         Me.lblDate.Text = "May 2, 2016"
+        Me.lblDate.Visible = False
         '
         'lblLocation
         '
@@ -90,6 +94,7 @@ Partial Class frmJobFair
         Me.lblLocation.Size = New System.Drawing.Size(199, 23)
         Me.lblLocation.TabIndex = 5
         Me.lblLocation.Text = "Located in Lochlan Hal"
+        Me.lblLocation.Visible = False
         '
         'lblRoom
         '
@@ -100,21 +105,24 @@ Partial Class frmJobFair
         Me.lblRoom.Size = New System.Drawing.Size(94, 23)
         Me.lblRoom.TabIndex = 6
         Me.lblRoom.Text = "Room 101"
+        Me.lblRoom.Visible = False
         '
         'btnExit
         '
+        Me.btnExit.BackColor = System.Drawing.Color.Honeydew
         Me.btnExit.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.Location = New System.Drawing.Point(107, 543)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(139, 36)
         Me.btnExit.TabIndex = 7
         Me.btnExit.Text = "Exit Window"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.UseVisualStyleBackColor = False
         '
-        'frmC2P1
+        'frmJobFair
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.BlanchedAlmond
         Me.ClientSize = New System.Drawing.Size(669, 601)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.lblRoom)
@@ -124,7 +132,7 @@ Partial Class frmJobFair
         Me.Controls.Add(Me.lblSubtitle)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.picJobFair)
-        Me.Name = "frmC2P1"
+        Me.Name = "frmJobFair"
         CType(Me.picJobFair, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
