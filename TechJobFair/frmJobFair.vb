@@ -1,13 +1,14 @@
 ﻿' Program Name: Tech Job Fair
 ' Developer:    Tu Tong
 ' Date:         Septemper 26, 2017
-' Purpose:      This application displays a job fair detail which is hidden at launch
-'               The user can view job detail by click on button.
+' Purpose:      This application displays a welcome screen for the
+'               Tech Job Fair. The user can choose an option 
+'               to view the date and location.
 
 Public Class frmJobFair
     Private Sub btnViewDetails_Click(sender As Object, e As EventArgs) Handles btnViewDetails.Click
         ' This code is executed when user taps or clicks the View Details button.
-        ' It displays the job's details, disables View Job Detail button, 
+        ' It displays the job Date and Location labels, disables View Job Detail button, 
         ' and enables the Exit Window button.
 
         lblLocation.Visible = True
