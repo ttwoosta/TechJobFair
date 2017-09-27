@@ -110,6 +110,7 @@ Partial Class frmJobFair
         'btnExit
         '
         Me.btnExit.BackColor = System.Drawing.Color.Honeydew
+        Me.btnExit.Enabled = False
         Me.btnExit.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.Location = New System.Drawing.Point(107, 543)
         Me.btnExit.Name = "btnExit"
